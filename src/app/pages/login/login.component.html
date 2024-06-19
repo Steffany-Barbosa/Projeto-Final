@@ -2,7 +2,27 @@
 primaryBtnText = "Adicionar"
 secondaryBtnText = "Excluir"
 >
+  <form [formGroup]="loginForm">
+    <app-primary-input 
+    formControlName = "email"
+    inputName = "email"
+    type="email"
+    label="Email"
+    placeholder="steh.@gmail.com">
+        <img src="/assets/email4.png" alt="">
+    </app-primary-input>
     
+    <app-primary-input 
+    formControlName = "password"
+    inputName = "password"
+    type = "password"
+    label = "Password"
+    >
+        <img src="/assets/password4.png" alt="">
+    </app-primary-input>
+
+    <span>Esqueceu sua senha? Forgot password?</span>
+  </form>  
 </app-default-login-layout>
 <!--fazer mudanças aqui colocar no title Login colaboradores-->
 <!--Nos botões colocar adicionar e excluir-->
